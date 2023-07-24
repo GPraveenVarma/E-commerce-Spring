@@ -3,6 +3,8 @@ package org.saleban.admin.util;
 public final class Mappings {
     //Constants
     public static final String HOME = "/";
+    public static final String MY_Home = "/myhome";
+    
 
     public static final String LOGIN = "/login";
     public static final String INDEX = "/home";
