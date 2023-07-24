@@ -16,7 +16,6 @@ import java.util.Set;
 @SpringBootApplication
 public class AdminApplication{
 
-	//implements CommandLineRunner
 
 	@Autowired
 	private UserService userService;
