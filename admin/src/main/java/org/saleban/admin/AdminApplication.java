@@ -16,9 +16,6 @@ import java.util.Set;
 @SpringBootApplication
 public class AdminApplication{
 
-
-	@Autowired
-	private UserService userService;
         // new feature
 
 	public static void main(String[] args) {
