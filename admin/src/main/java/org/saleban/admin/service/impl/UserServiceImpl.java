@@ -4,6 +4,7 @@ import org.saleban.admin.domain.User;
 import org.saleban.admin.domain.security.PasswordResetToken;
 import org.saleban.admin.domain.security.UserRole;
 import org.saleban.admin.repository.PasswordResetTokenRepository;
+import org.saleban.admin.repository.ProductRepo;
 import org.saleban.admin.repository.RoleRepository;
 import org.saleban.admin.repository.UserRepository;
 import org.saleban.admin.service.UserService;
@@ -23,6 +24,9 @@ public class UserServiceImpl implements UserService {
     private UserRepository userRepository;
 
     @Autowired
+    private ProductRepo productRepo;
+
+    @Autowired
     private RoleRepository roleRepository;
 
     @Override
@@ -32,8 +36,8 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void createPasswordResetTokenUser(User user, String token) {
-        final PasswordResetToken mytkn = new PasswordResetToken(token, user);
-        passwordResetTokenRepository.save(mytkn);
+        final PasswordResetToken mytoken = new PasswordResetToken(token, user);
+        passwordResetTokenRepository.save(mytoken);
     }
 
     @Override
