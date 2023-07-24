@@ -12,6 +12,8 @@ public final class Mappings {
     public static final String LOGOUT = "/logout";
     public static final String ADD_PRODUCT = "/product";
 
+    public static final String ADD_NEW_PRODUCT = "/newproduct";
+
     private Mappings() {}
 
 }
