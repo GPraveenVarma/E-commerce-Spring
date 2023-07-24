@@ -18,6 +18,8 @@ public class AdminApplication{
 
         // new feature
 
+	// master
+
 	public static void main(String[] args) {
 		SpringApplication.run(AdminApplication.class, args);
 	}
